@@ -4,21 +4,21 @@
 class MainK {
     void main() {
         def lista = [];
+        def lista2 =[];
+        def lineaE = [];
+        def listaI = []
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
         def input = br.readLine();
         while(input!="::") {
             lista.add(input);
             input = br.readLine();
         }
-        def lista2 =[];
-        def lineaE = [];
         input = br.readLine();
-        while(input!="") {
+        while(input!=""){
             lineaE = input.split(" ");
             lista2.add(lineaE);
             input = br.readLine();
         }
-        def listaI = []
         for (i in 0..lista2.size()-1){
             lista2[i] = minusculas(lista2[i]);
         }
